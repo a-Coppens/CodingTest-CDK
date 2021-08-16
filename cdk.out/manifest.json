@@ -1,0 +1,1246 @@
+{
+  "version": "13.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AwsCdkProjectStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AwsCdkProjectStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/AwsCdkProjectStack/MyVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcF9F0CA6F",
+            "trace": [
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:710:21)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1SubnetF6608456",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:997:20)",
+              "new PublicSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1RouteTableC46AB2F4",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1015:19)",
+              "new PublicSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1RouteTableAssociation2ECEE1CB",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1021:5)",
+              "new PublicSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1DefaultRoute95FDF9EB",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1031:19)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:758:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:757:46)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1EIP096967CB",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1161:21)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:108:27)",
+              "Vpc.createNatGateways (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1NATGatewayAD3400C1",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1159:17)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:108:27)",
+              "Vpc.createNatGateways (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2Subnet492B6BFB",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:997:20)",
+              "new PublicSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2RouteTable1DF17386",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1015:19)",
+              "new PublicSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2RouteTableAssociation227DE78D",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1021:5)",
+              "new PublicSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2DefaultRoute052936F6",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1031:19)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:758:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:757:46)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2EIP8CCBA239",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1161:21)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:108:27)",
+              "Vpc.createNatGateways (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2NATGateway91BFBEC9",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1159:17)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:108:27)",
+              "Vpc.createNatGateways (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1Subnet5057CF7E",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:997:20)",
+              "new PrivateSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1RouteTable8819E6E2",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1015:19)",
+              "new PrivateSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1RouteTableAssociation56D38C7E",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1021:5)",
+              "new PrivateSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1DefaultRouteA8CDE2FA",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1063:19)",
+              "NatGatewayProvider.configureSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:125:12)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:118:12)",
+              "Vpc.createNatGateways (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2Subnet0040C983",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:997:20)",
+              "new PrivateSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2RouteTableCEDCEECE",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1015:19)",
+              "new PrivateSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2RouteTableAssociation86A610DA",
+            "trace": [
+              "new Subnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1021:5)",
+              "new PrivateSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2DefaultRoute9CE96294",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1063:19)",
+              "NatGatewayProvider.configureSubnet (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:125:12)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:118:12)",
+              "Vpc.createNatGateways (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcIGW5C4A4F63",
+            "trace": [
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:746:19)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcVPCGW488ACE0D",
+            "trace": [
+              "new Vpc (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:752:19)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:12:21)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyCluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyCluster4C1BA579",
+            "trace": [
+              "new Cluster (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\cluster.ts:128:21)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:15:25)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLBDE830E97",
+            "trace": [
+              "new BaseLoadBalancer (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\shared\\base-load-balancer.ts:138:22)",
+              "new ApplicationLoadBalancer (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-load-balancer.ts:56:5)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:205:48)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLBSecurityGroup6FBF16F1",
+            "trace": [
+              "new SecurityGroup (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:289:26)",
+              "new ApplicationLoadBalancer (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-load-balancer.ts:63:52)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:205:48)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/LB/SecurityGroup/to AwsCdkProjectStackMyFargateServiceSecurityGroup37A06E46:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLBSecurityGrouptoAwsCdkProjectStackMyFargateServiceSecurityGroup37A06E468080DD94CCD3",
+            "trace": [
+              "SecurityGroup.addEgressRule (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:83:7)",
+              "SecurityGroup.addEgressRule (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:338:13)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:86:23",
+              "ReactiveList.forEachAndForever (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:200:7)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:85:45",
+              "ReactiveList.forEachAndForever (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:200:7)",
+              "Connections.allowTo (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:84:26)",
+              "Connections.allowFrom (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:114:25)",
+              "ApplicationListener.registerConnectable (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.ts:324:29)",
+              "ApplicationTargetGroup.registerConnectable (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.ts:136:16)",
+              "Object.attachToApplicationTargetGroup (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:401:21)",
+              "FargateService.attachToApplicationTargetGroup (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:386:43)",
+              "ApplicationTargetGroup.addTarget (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.ts:99:29)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:306:22)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:103:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLBPublicListener61A1042F",
+            "trace": [
+              "new BaseListener (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\shared\\base-listener.ts:94:22)",
+              "new ApplicationListener (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.ts:111:5)",
+              "ApplicationLoadBalancer.addListener (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-load-balancer.ts:77:22)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:221:34)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLBPublicListenerECSGroup4A3EDF05",
+            "trace": [
+              "new TargetGroupBase (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\shared\\base-target-group.ts:129:21)",
+              "new ApplicationTargetGroup (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.ts:67:5)",
+              "ApplicationListener.addTargets (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.ts:235:19)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:226:38)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLoadBalancerDNS704F6391",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:292:5)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/ServiceURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceServiceURL4CF8398A",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:293:5)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/TaskDef/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceTaskDefTaskRole62C7D397",
+            "trace": [
+              "new Role (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new TaskDefinition (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:222:39)",
+              "new FargateTaskDefinition (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-task-definition.ts:62:5)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:54:29)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/TaskDef/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceTaskDef5DA17B39",
+            "trace": [
+              "new TaskDefinition (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:230:21)",
+              "new FargateTaskDefinition (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-task-definition.ts:62:5)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:54:29)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/TaskDef/web/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceTaskDefwebLogGroup4A6C44E8",
+            "trace": [
+              "new LogGroup (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-logs\\lib\\log-group.ts:237:22)",
+              "AwsLogDriver.bind (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\log-drivers\\aws-log-driver.ts:58:44)",
+              "new ContainerDefinition (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\container-definition.ts:216:44)",
+              "FargateTaskDefinition.addContainer (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:360:12)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:69:45)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/TaskDef/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceTaskDefExecutionRoleD6305504",
+            "trace": [
+              "new Role (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "FargateTaskDefinition.obtainExecutionRole (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:416:29)",
+              "AwsLogDriver.bind (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\log-drivers\\aws-log-driver.ts:62:65)",
+              "new ContainerDefinition (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\container-definition.ts:216:44)",
+              "FargateTaskDefinition.addContainer (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:360:12)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:69:45)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/TaskDef/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceTaskDefExecutionRoleDefaultPolicyEC22B20F",
+            "trace": [
+              "new Policy (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "Function.addToPrincipal (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:92:61)",
+              "LogGroup.grant (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-logs\\lib\\log-group.ts:99:22)",
+              "LogGroup.grantWrite (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-logs\\lib\\log-group.ts:94:17)",
+              "AwsLogDriver.bind (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\log-drivers\\aws-log-driver.ts:62:19)",
+              "new ContainerDefinition (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\container-definition.ts:216:44)",
+              "FargateTaskDefinition.addContainer (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:360:12)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:69:45)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceF490C034",
+            "trace": [
+              "new BaseService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:242:21)",
+              "new FargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-service.ts:79:5)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:85:20)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/Service/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceSecurityGroup7016792A",
+            "trace": [
+              "new SecurityGroup (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:289:26)",
+              "FargateService.configureAwsVpcNetworkingWithSecurityGroups (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:572:25)",
+              "new FargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-service.ts:98:10)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:85:20)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/MyFargateService/Service/SecurityGroup/from AwsCdkProjectStackMyFargateServiceLBSecurityGroupEBB8D78B:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceSecurityGroupfromAwsCdkProjectStackMyFargateServiceLBSecurityGroupEBB8D78B80804FB32804",
+            "trace": [
+              "SecurityGroup.addIngressRule (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:65:7)",
+              "SecurityGroup.addIngressRule (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:306:13)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:107:23",
+              "ReactiveList.forEachAndForever (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:200:7)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:106:45",
+              "ReactiveList.forEachAndForever (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:200:7)",
+              "Connections.allowFrom (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:105:26)",
+              "ApplicationListener.registerConnectable (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.ts:324:29)",
+              "ApplicationTargetGroup.registerConnectable (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.ts:136:16)",
+              "Object.attachToApplicationTargetGroup (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:401:21)",
+              "FargateService.attachToApplicationTargetGroup (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:386:43)",
+              "ApplicationTargetGroup.addTarget (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.ts:99:29)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:306:22)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:103:10)",
+              "new AwsCdkProjectStack (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\lib\\aws-cdk-project-stack.ts:19:9)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\bin\\aws-cdk-project.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1311:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\index.ts:1314:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js:527:35)",
+              "process.emit (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/AwsCdkProjectStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:31:27)",
+              "C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (C:\\Users\\Adam Coppens\\AppData\\Roaming\\npm\\node_modules\\ts-node\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js:527:35)",
+              "process.emit (C:\\Users\\Adam Coppens\\Desktop\\aws-cdk-project\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "AwsCdkProjectStack"
+    }
+  }
+}
