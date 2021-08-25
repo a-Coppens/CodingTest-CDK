@@ -35,6 +35,7 @@ jobs:
         
       - name: list files
         run: |
+          cd node_modules/source-map-support/
           ls 
         #cdk deploy --app ./CodingTest-CDK/cdk.out --require-approval never "*"
       - name: Deploy CDK
