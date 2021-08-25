@@ -27,7 +27,7 @@ jobs:
          cd ..
          cd ..
          cd ..
-         cd /perflog
+         cd /factory
          dir -l
 
    #   - name: Build Docker Image
