@@ -27,8 +27,7 @@ jobs:
          cd ..
          cd ..
          cd ..
-         cd /factory
-         dir -l
+         find . 
 
    #   - name: Build Docker Image
   #      run: |
