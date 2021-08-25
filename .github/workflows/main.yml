@@ -38,7 +38,7 @@ jobs:
         run: |
           cd ..
           cd ..
-          cd CodingTest-CDK/CodingTest-CDK/
+          cd CodingTest-CDK/CodingTest-CDK/src/
           ls
           
       - name: list file part 2
