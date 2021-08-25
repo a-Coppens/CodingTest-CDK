@@ -30,9 +30,9 @@ jobs:
          cd /work/
          dir -l
 
-      - name: Build Docker Image
-        run: |
-         docker build -f src/main/docker/Dockerfile -t adamcoppens/coding-test-app .
+   #   - name: Build Docker Image
+  #      run: |
+     #    docker build -f src/main/docker/Dockerfile -t adamcoppens/coding-test-app .
          
      # docker -d -g /home/user1/docker          
       - name: Configure AWS Credentials
