@@ -47,6 +47,7 @@ jobs:
           cd ..
           cd ..
           cd ..
+          cd ..
           ls
       - name: list file part 3
         run: |
