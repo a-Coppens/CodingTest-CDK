@@ -27,7 +27,7 @@ jobs:
          cd ..
          cd ..
          cd ..
-         cd ./work/CodingTest-CDK
+         cd ./work/CodingTest-CDK/CodingTest-CDK
          ls 
 
    #   - name: Build Docker Image
