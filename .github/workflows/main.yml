@@ -21,6 +21,15 @@ jobs:
         with:
           repository: a-Coppens/JavaCodingTest
           
+      - name: setup Java Environment
+        uses: actions/setup-java@v2
+        with:
+         java-version: '11'
+         distribution: 'adopt' 
+         
+      - name: Build Snapshots run Tests
+        run: mvn --batch-mode --update-snapshots verify
+          
         
       - name: list files
         run: |
