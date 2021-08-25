@@ -32,7 +32,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-         docker build -f src/main/docker/Dockerfile -t $ECR_REGISTRY/test_code_repo:latest .
+         docker build -f src/main/docker/Dockerfile -t src/main/docker/
          
       - name: list files
         run: |
