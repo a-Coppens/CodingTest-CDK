@@ -33,6 +33,9 @@ jobs:
       - name: list files
         run: |
           ls 
+          
+      - name: list files 2
+        run: |
           cd .. 
           ls
    #   - name: Deploy CDK
