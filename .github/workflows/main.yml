@@ -30,10 +30,6 @@ jobs:
       - name: Install AWS CDK
         run: 'sudo npm install -g aws-cdk'
         
-        ## TODO : CDK SYNTH
-      - name: Synth CDK
-        run: 'cdk synth --require-approval never'
-
       - name: Deploy CDK
         run: |
           cdk deploy --app ./CodingTest-CDK/cdk.out --require-approval never "*"
