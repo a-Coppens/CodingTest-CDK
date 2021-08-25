@@ -32,7 +32,7 @@ jobs:
         
         ## TODO : CDK SYNTH
       - name: Synth CDK
-	run:
+	run: |
 	  cdk synth --require-approval never "*"
 
       - name: Deploy CDK
