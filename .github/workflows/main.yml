@@ -28,7 +28,7 @@ jobs:
          cd ..
          cd ..
          cd ./work/CodingTest-CDK/CodingTest-CDK
-         ls 
+         readlink -f pom.xml
 
    #   - name: Build Docker Image
   #      run: |
