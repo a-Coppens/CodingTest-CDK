@@ -32,7 +32,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-         docker build -f src/main/docker/Dockerfile
+         docker build -f src/main/docker/Dockerfile .
          
       - name: list files
         run: |
