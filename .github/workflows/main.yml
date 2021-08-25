@@ -38,7 +38,6 @@ jobs:
         run: |
           cd ..
           cd ..
-          cd _temp/
           ls
           
       - name: list file part 2
