@@ -32,6 +32,7 @@ jobs:
       - name: list files
         run: |
          cd ..
+         cd ..
          dir -l
 
       - name: Build Docker Image
