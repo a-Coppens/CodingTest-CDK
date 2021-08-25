@@ -458,6 +458,20 @@
         "aws:cdk:path": "AwsCdkProjectStack/MyCluster/Resource"
       }
     },
+    "testcoderepo311D1F96": {
+      "Type": "AWS::ECR::Repository",
+      "Properties": {
+        "LifecyclePolicy": {
+          "LifecyclePolicyText": "{\"rules\":[{\"rulePriority\":1,\"selection\":{\"tagStatus\":\"tagged\",\"tagPrefixList\":[\"release\"],\"countType\":\"imageCountMoreThan\",\"countNumber\":1},\"action\":{\"type\":\"expire\"}},{\"rulePriority\":2,\"selection\":{\"tagStatus\":\"any\",\"countType\":\"sinceImagePushed\",\"countNumber\":5,\"countUnit\":\"days\"},\"action\":{\"type\":\"expire\"}}]}"
+        },
+        "RepositoryName": "test_code_repo"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "AwsCdkProjectStack/test_code_repo/Resource"
+      }
+    },
     "MyFargateServiceLBDE830E97": {
       "Type": "AWS::ElasticLoadBalancingV2::LoadBalancer",
       "Properties": {
@@ -563,6 +577,8 @@
     "MyFargateServiceLBPublicListenerECSGroup4A3EDF05": {
       "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
       "Properties": {
+        "HealthCheckEnabled": true,
+        "HealthCheckPath": "/",
         "Port": 80,
         "Protocol": "HTTP",
         "TargetType": "ip",
@@ -600,7 +616,55 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "docker.io/adamcoppens/coding-test-app:latest",
+            "Image": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Select": [
+                      4,
+                      {
+                        "Fn::Split": [
+                          ":",
+                          {
+                            "Fn::GetAtt": [
+                              "testcoderepo311D1F96",
+                              "Arn"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  ".dkr.ecr.",
+                  {
+                    "Fn::Select": [
+                      3,
+                      {
+                        "Fn::Split": [
+                          ":",
+                          {
+                            "Fn::GetAtt": [
+                              "testcoderepo311D1F96",
+                              "Arn"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  ".",
+                  {
+                    "Ref": "AWS::URLSuffix"
+                  },
+                  "/",
+                  {
+                    "Ref": "testcoderepo311D1F96"
+                  },
+                  ":latest"
+                ]
+              ]
+            },
             "LogConfiguration": {
               "LogDriver": "awslogs",
               "Options": {
@@ -679,6 +743,25 @@
       "Properties": {
         "PolicyDocument": {
           "Statement": [
+            {
+              "Action": [
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:GetDownloadUrlForLayer",
+                "ecr:BatchGetImage"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "testcoderepo311D1F96",
+                  "Arn"
+                ]
+              }
+            },
+            {
+              "Action": "ecr:GetAuthorizationToken",
+              "Effect": "Allow",
+              "Resource": "*"
+            },
             {
               "Action": [
                 "logs:CreateLogStream",
@@ -808,7 +891,7 @@
     "CDKMetadata": {
       "Type": "AWS::CDK::Metadata",
       "Properties": {
-        "Analytics": "v2:deflate64:H4sIAAAAAAAACn1Ry27CMBD8Fu7GNBVSeyylFCGhNgLE3XGWdCHYkb0GoSj/XsdJIKVVTzuefXlmIx5Fz/xh8CLOdijTw6iU2gAv1yTkga3AamcksOlOfToqHLGpVpaMk1Rz/bxPpEioVcXqWSXIR15uC1nntvGUxS7JUa5doiD03tBKO4KNSHK48TduYq2WKOrJ1+IazBZxHT4EzQXBWVxYbPDk4W3wQhEYj7uC5ifta0Je4tcRFLE1SGeQLnOjXRH+8C8xywxY+4teqMBXDKTl5TR31m8PzrTwXZhM1Krs4Q12qLDTdM9oRQIVmB7X9q7BnLDxu4Vh3bAQVEu1fFIU3uXg1lKL9FXkQklI79ohF5ZQ5r4iCRWospM/19/dQcSPd78OvTbV1nS4l9/4zf4CnZG9Z8VQHHm50s3dQ4y17wuHalDFcp15N5c6u47ocFVVTOkU+N6OTtGYR098PNhbxKFxivAIfNXEb8g5PPzkAgAA"
+        "Analytics": "v2:deflate64:H4sIAAAAAAAACn1Sy07DMBD8lt5dQxASHCmlVJUqiNKKu+MsYWlqR/Y6qIry79hOQsNDnDw7+5xdJzxJbvnl7E582LksDhet1AZ4uyMhDywDq52RwJav6tlR7YgttbJknKTATf3eUSChVh0LtVqQV7x9qWXwvaRLlrq8QrlzuYKYe0aZdgR7kVdw5s/cwlotUYTKX8EBrDZpeJ4ErQXBhzix1GDj4bnwRhEYj8eAfpLBWpCX+HYERWwH0hmk09poV8cZ/iVWpQFrf9EbFfmOgbS8XVbO+u5xMwN8FKYUQZU9PMArKhw1/WS0IoEKzIQbcndgGuz3PcDQzvA2g1pbJG1O/V1GK04zrwWFTVi+qGt/hLjMrRbFvaiEklD8qA6VsISy8hF5jEBVNv6af2dHjd/saRx66WqIGfHEv/ed/YHGPU/MjqE4emG6/xbxTbXPiwp71LFKl37ZW11+lRhx13VM6QL4u71okmue3PDr2btFnBunCI/As/79BOVq6OADAwAA"
       },
       "Metadata": {
         "aws:cdk:path": "AwsCdkProjectStack/CDKMetadata/Default"

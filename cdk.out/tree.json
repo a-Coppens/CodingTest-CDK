@@ -681,6 +681,33 @@
               "version": "1.118.0"
             }
           },
+          "test_code_repo": {
+            "id": "test_code_repo",
+            "path": "AwsCdkProjectStack/test_code_repo",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "AwsCdkProjectStack/test_code_repo/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::ECR::Repository",
+                  "aws:cdk:cloudformation:props": {
+                    "lifecyclePolicy": {
+                      "lifecyclePolicyText": "{\"rules\":[{\"rulePriority\":1,\"selection\":{\"tagStatus\":\"tagged\",\"tagPrefixList\":[\"release\"],\"countType\":\"imageCountMoreThan\",\"countNumber\":1},\"action\":{\"type\":\"expire\"}},{\"rulePriority\":2,\"selection\":{\"tagStatus\":\"any\",\"countType\":\"sinceImagePushed\",\"countNumber\":5,\"countUnit\":\"days\"},\"action\":{\"type\":\"expire\"}}]}"
+                    },
+                    "repositoryName": "test_code_repo"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-ecr.CfnRepository",
+                  "version": "1.118.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-ecr.Repository",
+              "version": "1.118.0"
+            }
+          },
           "MyFargateService": {
             "id": "MyFargateService",
             "path": "AwsCdkProjectStack/MyFargateService",
@@ -831,6 +858,8 @@
                             "attributes": {
                               "aws:cdk:cloudformation:type": "AWS::ElasticLoadBalancingV2::TargetGroup",
                               "aws:cdk:cloudformation:props": {
+                                "healthCheckEnabled": true,
+                                "healthCheckPath": "/",
                                 "port": 80,
                                 "protocol": "HTTP",
                                 "targetType": "ip",
@@ -926,7 +955,55 @@
                         "containerDefinitions": [
                           {
                             "essential": true,
-                            "image": "docker.io/adamcoppens/coding-test-app:latest",
+                            "image": {
+                              "Fn::Join": [
+                                "",
+                                [
+                                  {
+                                    "Fn::Select": [
+                                      4,
+                                      {
+                                        "Fn::Split": [
+                                          ":",
+                                          {
+                                            "Fn::GetAtt": [
+                                              "testcoderepo311D1F96",
+                                              "Arn"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  ".dkr.ecr.",
+                                  {
+                                    "Fn::Select": [
+                                      3,
+                                      {
+                                        "Fn::Split": [
+                                          ":",
+                                          {
+                                            "Fn::GetAtt": [
+                                              "testcoderepo311D1F96",
+                                              "Arn"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  ".",
+                                  {
+                                    "Ref": "AWS::URLSuffix"
+                                  },
+                                  "/",
+                                  {
+                                    "Ref": "testcoderepo311D1F96"
+                                  },
+                                  ":latest"
+                                ]
+                              ]
+                            },
                             "name": "web",
                             "portMappings": [
                               {
@@ -1047,6 +1124,25 @@
                               "aws:cdk:cloudformation:props": {
                                 "policyDocument": {
                                   "Statement": [
+                                    {
+                                      "Action": [
+                                        "ecr:BatchCheckLayerAvailability",
+                                        "ecr:GetDownloadUrlForLayer",
+                                        "ecr:BatchGetImage"
+                                      ],
+                                      "Effect": "Allow",
+                                      "Resource": {
+                                        "Fn::GetAtt": [
+                                          "testcoderepo311D1F96",
+                                          "Arn"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "Action": "ecr:GetAuthorizationToken",
+                                      "Effect": "Allow",
+                                      "Resource": "*"
+                                    },
                                     {
                                       "Action": [
                                         "logs:CreateLogStream",
