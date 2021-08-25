@@ -41,7 +41,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-         docker -d -g /home/runner/work/CodingTest-CDK/CodingTest-CDK/
+         docker daemon -g /home/runner/work/CodingTest-CDK/CodingTest-CDK/
          docker build -f src/main/docker/Dockerfile -t adamcoppens/coding-test-app .
          
       - name: list files
