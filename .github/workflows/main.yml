@@ -48,7 +48,7 @@ jobs:
           cd ..
           cd ..
           cd ..
-          cd /var/lib/
+          cd /var/lib/docker/
           ls
       - name: list file part 3
         run: |
