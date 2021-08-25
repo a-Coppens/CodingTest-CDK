@@ -10,13 +10,41 @@ jobs:
   aws_cdk:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Checkout
         uses: actions/checkout@v2
         with:
          repository: a-Coppens/CodingTest-CDK
          path: './CodingTest-CDK'
+         
+      - name: Checkout tools repo
+        uses: actions/checkout@v2
+        with:
+          repository: a-Coppens/JavaCodingTest
+          
+      - name: setup Java Environment
+        uses: actions/setup-java@v2
+        with:
+         java-version: '11'
+         distribution: 'adopt' 
+       
+      - name: Build Snapshots run Tests
+        run: mvn --batch-mode --update-snapshots verify
 
+      - name: Build Docker Image
+        run: |
+         docker build -f src/main/docker/Dockerfile -t $ECR_REGISTRY/test_code_repo:latest .
+         
+      - name: list files
+        run: |
+          ls
+          cd ..
+          ls
+          
+      - name: list file part 2
+        run: |
+          cd ..
+          ls
+          
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -24,24 +52,24 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-southeast-2
 
-      - name: install npm
-        run: 'sudo apt update -y && sudo apt install nodejs npm -y'
+   #   - name: install npm
+   #     run: 'sudo apt update -y && sudo apt install nodejs npm -y'
         
-      - name: Install AWS CDK
-        run: 'sudo npm install -g aws-cdk'
+   #   - name: Install AWS CDK
+   #     run: 'sudo npm install -g aws-cdk'
         
-      - name: install npm dependencies
-        run: 'npm install'
+  #    - name: install npm dependencies
+   #     run: 'npm install'
         
-      - name: list files
-        run: |
-          cd node_modules/source-map-support/
-          ls 
-        #cdk deploy --app ./CodingTest-CDK/cdk.out --require-approval never "*"
-      - name: Deploy CDK
-        run: |
-           cdk deploy 
-        env:
-           AWS_REGION: ap-southeast-2
-           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+   #   - name: list files
+  #      run: |
+  #        cd node_modules/source-map-support/
+   #       ls 
+  #      #cdk deploy --app ./CodingTest-CDK/cdk.out --require-approval never "*"
+  #    - name: Deploy CDK
+   #     run: |
+   #        cdk deploy 
+  #      env:
+   #        AWS_REGION: ap-southeast-2
+   #        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  #         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
