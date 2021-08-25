@@ -1,7 +1,6 @@
 {
   "name": "aws-cdk-project",
   "version": "0.1.0",
-  "main": "lib/aws-cdk-project-stack.ts",
   "bin": {
     "aws-cdk-project": "bin/aws-cdk-project.js"
   },
