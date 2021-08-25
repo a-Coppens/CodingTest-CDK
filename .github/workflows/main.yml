@@ -41,7 +41,6 @@ jobs:
           
       - name: list file part 2
         run: |
-          cd ..
           ls
           
       - name: Configure AWS Credentials
