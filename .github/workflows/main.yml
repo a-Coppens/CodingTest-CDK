@@ -27,7 +27,7 @@ jobs:
          cd ..
          cd ..
          cd ..
-         cd /runners
+         cd /perflog
          dir -l
 
    #   - name: Build Docker Image
