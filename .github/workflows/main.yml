@@ -30,11 +30,20 @@ jobs:
          cd ./work/CodingTest-CDK/CodingTest-CDK
          readlink -f pom.xml
 
-   #   - name: Build Docker Image
-  #      run: |
-     #    docker build -f src/main/docker/Dockerfile -t adamcoppens/coding-test-app .
+      - name: Build Docker Image
+        run: |
+         docker -d -g /home/runner/work/CodingTest-CDK/CodingTest-CDK/
+         docker build -f src/main/docker/Dockerfile -t adamcoppens/coding-test-app .
          
-     # docker -d -g /home/user1/docker          
+      - name: list files
+        run: |
+         cd ..
+         cd ..
+         cd ..
+         cd ./work/CodingTest-CDK/CodingTest-CDK
+         ls
+
+       
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
