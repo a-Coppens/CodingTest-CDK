@@ -7,7 +7,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-    aws_cdk:
+  aws_cdk:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -30,15 +30,14 @@ jobs:
       - name: Install AWS CDK
         run: 'sudo npm install -g aws-cdk'
         
-        ## TODO : CDK SYNTH
-      - name: Synth CDK
-	run:
-	  cdk synth --require-approval never "*"
-
+      - name: list files
+        run: |
+          ls 
+        #cdk deploy --app ./CodingTest-CDK/cdk.out --require-approval never "*"
       - name: Deploy CDK
         run: |
-          cdk deploy --app ./CodingTest-CDK/cdk.out --require-approval never "*"
+           cdk deploy 
         env:
-          AWS_REGION: ap-southeast-2
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+           AWS_REGION: ap-southeast-2
+           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
