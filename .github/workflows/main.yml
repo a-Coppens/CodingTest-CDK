@@ -33,6 +33,7 @@ jobs:
         run: |
          cd ..
          cd ..
+         cd ..
          dir -l
 
       - name: Build Docker Image
