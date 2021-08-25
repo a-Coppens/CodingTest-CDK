@@ -1,4 +1,4 @@
-import * as cdk from '@aws-cdk/core';
+import cdk = require('@aws-cdk/core');
 import ec2 = require('@aws-cdk/aws-ec2');
 import ecs = require('@aws-cdk/aws-ecs');
 import ecs_patterns = require('@aws-cdk/aws-ecs-patterns');
@@ -42,10 +42,10 @@ export class AwsCdkProjectStack extends cdk.Stack {
     });
     
     /// TEST
-    loadBalancedFargateService.targetGroup.configureHealthCheck({
+    /*loadBalancedFargateService.targetGroup.configureHealthCheck({
       path: "/",
       enabled: true,
-    });
+    });*/
    
 }
 }
