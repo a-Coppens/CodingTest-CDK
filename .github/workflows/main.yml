@@ -36,7 +36,8 @@ jobs:
          
       - name: list files
         run: |
-          cd src/main/docker/
+          cd ..
+          cd ..
           ls
           
       - name: list file part 2
