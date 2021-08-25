@@ -32,7 +32,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-         docker build -f src/main/docker/Dockerfile .
+         docker build -f src/main/docker/Dockerfile -t adamcoppens/coding-test-app .
          
       - name: list files
         run: |
@@ -42,6 +42,13 @@ jobs:
           ls
           
       - name: list file part 2
+        run: |
+          cd ..
+          cd ..
+          cd ..
+          cd ..
+          ls
+      - name: list file part 3
         run: |
           cd ..
           cd ..
