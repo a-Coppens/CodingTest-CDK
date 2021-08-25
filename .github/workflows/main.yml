@@ -15,6 +15,7 @@ jobs:
         with:
          repository: a-Coppens/CodingTest-CDK
          
+###### INITIAL REPO IMAGE DEPLOYMENT ########      
 #      - name: Checkout tools repo
  #       uses: actions/checkout@v2
   #      with:
@@ -42,7 +43,7 @@ jobs:
       - name: Install AWS CDK
         run: 'sudo npm install -g aws-cdk'
         
-      - name: install npm dependencies
+      - name: Install npm dependencies
         run: 'npm install'
         
      
