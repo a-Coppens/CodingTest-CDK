@@ -7,7 +7,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-    aws_cdk:
+  aws_cdk:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -32,8 +32,7 @@ jobs:
         
         ## TODO : CDK SYNTH
       - name: Synth CDK
-	run: |
-	  cdk synth --require-approval never "*"
+	run: 'cdk synth --require-approval never
 
       - name: Deploy CDK
         run: |
