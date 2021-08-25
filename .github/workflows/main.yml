@@ -27,7 +27,7 @@ jobs:
          cd ..
          cd ..
          cd ..
-         cd /work/
+         cd /runners
          dir -l
 
    #   - name: Build Docker Image
