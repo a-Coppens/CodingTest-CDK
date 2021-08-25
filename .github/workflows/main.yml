@@ -30,6 +30,9 @@ jobs:
       - name: Install AWS CDK
         run: 'sudo npm install -g aws-cdk'
         
+      - name: install npm dependencies
+        run: 'npm install'
+        
       - name: list files
         run: |
           ls 
